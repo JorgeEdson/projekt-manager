@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace ProjektManager.Core.Domain.Entities.Base
 {
-    enum RequerimentTechnique
+    public enum RequerimentTechnique
     {
         UseCase,
         UserStory
     }
 
-    enum RequerimentSize
+    public enum RequerimentSize
     {
         Small,
         Medium,
         Large
     }
 
-    enum RequerimentType
+    public enum RequerimentType
     {
         Functional,
         NonFunctional,
@@ -28,7 +28,7 @@ namespace ProjektManager.Core.Domain.Entities.Base
         Business
     }
 
-    enum Status
+    public enum Status
     {
         Selectable,
         InProgress,
@@ -38,13 +38,13 @@ namespace ProjektManager.Core.Domain.Entities.Base
         Done
     }
 
-    enum ActivityType
+    public enum ActivityType
     {
         Development,
         Documentation
     }
 
-    enum FlowStepType
+    public enum FlowStepType
     {
         Principal,
         Alternative,
