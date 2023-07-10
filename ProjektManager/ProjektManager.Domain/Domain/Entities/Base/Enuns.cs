@@ -6,20 +6,23 @@ using System.Threading.Tasks;
 
 namespace ProjektManager.Core.Domain.Entities.Base
 {
-    public enum RequerimentTechnique
+
+    public enum RequirementTechnique
     {
         UseCase,
         UserStory
     }
+    
+    public enum RequirementSize
 
-    public enum RequerimentSize
     {
         Small,
         Medium,
         Large
     }
 
-    public enum RequerimentType
+
+    public enum RequirementType
     {
         Functional,
         NonFunctional,
