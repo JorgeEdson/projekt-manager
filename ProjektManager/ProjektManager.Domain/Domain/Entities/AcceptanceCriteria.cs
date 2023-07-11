@@ -4,9 +4,9 @@ namespace ProjektManager.Core.Domain.Entities
 {
     public class AcceptanceCriteria : BaseEntity
     {
-        public int RequirementId { get; set; }
-        public Requirement Requirement { get; set; }
-        public string Description { get; set; }
-        public bool Comply { get; set; }
+        public Guid RequirementId { get; private set; }
+        public Requirement Requirement { get; private set; }
+        public string Description { get; private set; }
+        public bool Comply { get; private set; }
     }
 }

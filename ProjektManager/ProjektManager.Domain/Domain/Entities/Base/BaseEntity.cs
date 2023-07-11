@@ -9,9 +9,9 @@ namespace ProjektManager.Core.Domain.Entities.Base
 {
     public abstract class BaseEntity
     {
-        public int Id { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public int UserId { get; set; }
-        public User User { get; set; }
+        public Guid Id { get; private set; }
+        public DateTime CreatedAt { get; private set; }
+        public Guid UserId { get; private set; }
+        public User User { get; private set; }
     }
 }

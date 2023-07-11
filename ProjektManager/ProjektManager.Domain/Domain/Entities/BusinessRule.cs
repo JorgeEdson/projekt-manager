@@ -4,8 +4,8 @@ namespace ProjektManager.Core.Domain.Entities
 {
     public class BusinessRule : BaseEntity
     {
-        public int UserStoryId { get; set; }
-        public UserStory UserStory { get; set; }
-        public string Description { get; set; }
+        public Guid UserStoryId { get; private set; }
+        public UserStory UserStory { get; private set; }
+        public string Description { get; private set; }
     }
 }

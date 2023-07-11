@@ -4,10 +4,10 @@ namespace ProjektManager.Core.Domain.Entities
 {
     public class Example : BaseEntity
     {
-        public int UserStoryId { get; set; }
-        public UserStory UserStory { get; set; }
-        public string Context { get; set; }
-        public string Action { get; set; }
-        public string Result { get; set; }
+        public Guid UserStoryId { get; private set; }
+        public UserStory UserStory { get; private set; }
+        public string Context { get; private set; }
+        public string Action { get; private set; }
+        public string Result { get; private set; }
     }
 }

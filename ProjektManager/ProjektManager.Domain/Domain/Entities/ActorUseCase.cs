@@ -8,15 +8,14 @@ using System.Threading.Tasks;
 namespace ProjektManager.Core.Domain.Entities
 {
     public class ActorUseCase: BaseEntity
-
     {
-        public int ActorId { get; set; }
+        public Guid ActorId { get; private set; }
 
-        public Actor Actor { get; set; }
+        public Actor Actor { get; private set; }
 
-        public int UseCaseId { get; set; }
+        public Guid UseCaseId { get; private set; }
 
-        public UseCase UseCase { get; set; }         
+        public UseCase UseCase { get; private set; }         
 
     }
 }
