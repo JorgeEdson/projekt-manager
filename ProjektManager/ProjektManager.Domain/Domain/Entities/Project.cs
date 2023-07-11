@@ -9,12 +9,12 @@ namespace ProjektManager.Core.Domain.Entities
 {
     public class Project: BaseEntity
     {
-        public List<Actor> Actors { get; set; }
-        public RequirementTechnique RequirementTechnique { get; set; }
-        public int SquadId { get; set; }
-        public Squad Squad { get; set; }
-        public int TapId { get; set; }
-        public Tap Tap { get; set; }
-        public bool Completed { get; set; }
+        public List<Actor> Actors { get; private set; }
+        public RequirementTechnique RequirementTechnique { get; private set; }
+        public Guid SquadId { get; private set; }
+        public Squad Squad { get; private set; }
+        public Guid TapId { get; private set; }
+        public Tap Tap { get; private set; }
+        public bool Completed { get; private set; }
     }
 }

@@ -9,9 +9,9 @@ namespace ProjektManager.Core.Domain.Entities
 {
     public class ActorUserStory: BaseEntity
     {
-        public int ActorId { get; set; }
-        public Actor Actor { get; set; }
-        public int UserStoryId { get; set; }
-        public UserStory UserStory { get; set; }
+        public Guid ActorId { get; private set; }
+        public Actor Actor { get; private set; }
+        public Guid UserStoryId { get; private set; }
+        public UserStory UserStory { get; private set; }
     }
 }

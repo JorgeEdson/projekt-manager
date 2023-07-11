@@ -9,7 +9,7 @@ namespace ProjektManager.Core.Domain.Entities
 {
     public class Actor : BaseEntity
     {
-        public int ProjectId { get; set; }
-        public Project Project { get; set; }
+        public Guid ProjectId { get; private set; }
+        public Project Project { get; private set; }
     }
 }
