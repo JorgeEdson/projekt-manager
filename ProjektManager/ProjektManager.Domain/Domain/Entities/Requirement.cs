@@ -10,7 +10,7 @@ namespace ProjektManager.Core.Domain.Entities
         public string Description { get; private set; }        
         public RequirementType RequirementType { get; private set; }
         public RequirementSize RequirementSize { get; private set; }
-        public List<Requirement> Dependencies { get; private set; }
-        public List<AcceptanceCriteria> AcceptanceCriterias { get; private set; }
+        public List<Requirement>? Dependencies { get; private set; }
+        public List<AcceptanceCriteria>? AcceptanceCriterias { get; private set; }
     }
 }

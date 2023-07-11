@@ -8,7 +8,7 @@ namespace ProjektManager.Core.Domain.Entities
         public Profile Profile { get; private set; }
         public Guid UserId { get; private set; }
         public User User { get; private set; }
-        public List<Squad> Squads { get; private set; }
+        public List<Squad>? Squads { get; private set; }
 
     }
 }
