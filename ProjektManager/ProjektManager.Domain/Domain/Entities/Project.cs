@@ -4,7 +4,7 @@ namespace ProjektManager.Core.Domain.Entities
 {
     public class Project: BaseEntity
     {
-        #region Propertys
+        #region Properties
         public List<Actor>? Actors { get; private set; }
         public RequirementTechnique RequirementTechnique { get; private set; }
         public Guid? SquadId { get; private set; }

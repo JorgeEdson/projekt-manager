@@ -8,5 +8,8 @@ namespace ProjektManager.Core.Domain.Entities
 {
     public class Risk : TapSession
     {
+        public Risk(Tap tap, string description) : base(tap, description)
+        {
+        }
     }
 }

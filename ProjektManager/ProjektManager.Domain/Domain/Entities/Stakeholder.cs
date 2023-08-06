@@ -8,5 +8,8 @@ namespace ProjektManager.Core.Domain.Entities
 {
     public class Stakeholder : TapSession
     {
+        public Stakeholder(Tap tap, string description) : base(tap, description)
+        {
+        }
     }
 }
