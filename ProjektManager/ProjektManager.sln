@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjektManager.Core", "ProjektManager.Domain\ProjektManager.Core.csproj", "{E0AD0C07-3F04-428A-BD01-DEAE9DCFCE26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjektManager.Domain", "ProjektManager.Domain\ProjektManager.Domain.csproj", "{E0AD0C07-3F04-428A-BD01-DEAE9DCFCE26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjektManager.Database", "ProjektManager.Database\ProjektManager.Database.csproj", "{062211B4-2CC2-4B26-B678-E81893509C9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjektManager.Database", "ProjektManager.Database\ProjektManager.Database.csproj", "{062211B4-2CC2-4B26-B678-E81893509C9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjektManager.Business", "ProjektManager.Business\ProjektManager.Business.csproj", "{C25A7068-D6B2-4B54-8585-2BD191BBBFD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjektManager.Business", "ProjektManager.Business\ProjektManager.Business.csproj", "{C25A7068-D6B2-4B54-8585-2BD191BBBFD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjektManager.API", "ProjektManager.API\ProjektManager.API.csproj", "{5F88CE41-B73E-42F0-8E75-072DFAD118D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjektManager.API", "ProjektManager.API\ProjektManager.API.csproj", "{5F88CE41-B73E-42F0-8E75-072DFAD118D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

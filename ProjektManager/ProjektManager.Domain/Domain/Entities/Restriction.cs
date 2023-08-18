@@ -1,11 +1,11 @@
 ﻿
 
+using ProjektManager.Core.Domain.ValueObjects.Base;
+
 namespace ProjektManager.Core.Domain.Entities
 {
-    public class Restriction : TapSession
+    public class Restriction : BaseValueObject
     {
-        public Restriction(Tap tap, string description) : base(tap, description)
-        {
-        }
+        
     }
 }
