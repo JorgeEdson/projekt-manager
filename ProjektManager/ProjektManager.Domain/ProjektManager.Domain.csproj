@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,8 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\Response\" />
-    <Folder Include="DTOs\Request\" />
+    <Compile Remove="DTOs\**" />
+    <EmbeddedResource Remove="DTOs\**" />
+    <None Remove="DTOs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Base\Commands\" />
+    <Folder Include="Base\Handlers\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Queries\" />
   </ItemGroup>
 
 </Project>
