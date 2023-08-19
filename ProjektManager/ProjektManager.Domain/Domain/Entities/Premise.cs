@@ -1,9 +1,9 @@
-﻿namespace ProjektManager.Core.Domain.Entities
+﻿using ProjektManager.Core.Domain.ValueObjects.Base;
+
+namespace ProjektManager.Core.Domain.Entities
 {
-    public class Premise : TapSession
+    public class Premise : BaseValueObject
     {
-        public Premise(Tap tap, string description) : base(tap, description)
-        {
-        }        
+        
     }
 }

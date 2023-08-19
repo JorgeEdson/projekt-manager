@@ -1,9 +1,8 @@
-﻿namespace ProjektManager.Core.Domain.Entities
+﻿using ProjektManager.Core.Domain.ValueObjects.Base;
+
+namespace ProjektManager.Core.Domain.Entities
 {
-    public class ExcludedEscoped : TapSession
-    {
-        public ExcludedEscoped(Tap tap, string description) : base(tap, description)
-        {
-        }
+    public class ExcludedEscoped : BaseValueObject
+    {        
     }
 }

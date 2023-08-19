@@ -1,20 +1,20 @@
 ﻿using ProjektManager.Core.Domain.Entities.Base;
+using ProjektManager.Core.Domain.ValueObjects.Base;
 
 namespace ProjektManager.Core.Domain.Entities
 {
-    public abstract class TapSession : BaseEntity
+    public abstract class TapSession : BaseValueObject
     {
         #region Properties
-        public string Description { get; private set; }
-        public Guid TapId { get; private set; }
-        public Tap Tap { get; private set; }
+        public Premise? Premise { get; set; }
+        public Restriction? Restriction { get; set; }
+        public Objective? Objective { get; set; }
+        public Justification? Justification { get; set; }
+        public ExcludedEscoped? ExcludedEscoped { get; set; }
+        public Risk? Risk { get; set; }
+        public PaymentAgreement? PaymentAgreement { get; set; }
         #endregion
 
-        protected TapSession(Tap tap, string description)
-        {
-            Tap = tap;
-            TapId = tap.Id;
-            Description = description;
-        }
+
     }
 }

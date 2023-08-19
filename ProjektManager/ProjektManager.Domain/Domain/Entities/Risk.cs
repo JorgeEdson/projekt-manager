@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ProjektManager.Core.Domain.ValueObjects.Base;
 
 namespace ProjektManager.Core.Domain.Entities
 {
-    public class Risk : TapSession
+    public class Risk : BaseValueObject
     {
-        public Risk(Tap tap, string description) : base(tap, description)
-        {
-        }
+        
     }
 }
